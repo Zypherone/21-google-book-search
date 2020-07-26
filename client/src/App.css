@@ -1,0 +1,12 @@
+.jumbotron {
+  background: url(/stacked-books.jpg);
+}
+
+.card-img-left {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.card-text {
+  margin: 1em 0;
+}
