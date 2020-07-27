@@ -40,6 +40,8 @@ Click http://book-search.danutuckersaunders.name/ to visit a live demo.
 
 ## Built with
 - [React.js](https://reactjs.org/))
+- [Bootstrap](https://getbootstrap.com/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
 - [normalize.css](http://necolas.github.io/normalize.css/)
 
 ## Code style
