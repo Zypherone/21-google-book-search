@@ -8,7 +8,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Container, Col, Jumbotron } from 'react-bootstrap'
-import Nav from 'components/Nav';
+import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Search from 'pages/Search';
 import Saved from 'pages/Saved';
@@ -16,17 +16,12 @@ import Page404 from 'pages/Page404';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'App.css';
 
-function App() {
+function App() {  
   return (
     <Router>
       <Container fluid>
         <Container as="main">
-          <Nav />
-          <Jumbotron fluid>
-            <Col>
-              <h1 className="display-1">Google Book Search</h1>
-            </Col>
-          </Jumbotron>
+          <Header />
           <Switch>
             <Route exact path="/" component={Search} />
             <Route exact path="/saved" component={Saved} />

@@ -108,3 +108,21 @@ build/
 
 # Package-lock.json
 package-lock.json
+client/src/_OLD/_App.js
+client/src/_OLD/index.css
+client/src/_OLD/index.js
+client/src/_OLD/_components/Search.js
+client/src/_OLD/components/Layout.js
+client/src/_OLD/components/Footer/index.js
+client/src/_OLD/components/Grid/index.js
+client/src/_OLD/components/Nav/index.js
+client/src/_OLD/components/SavedBooks/index.js
+client/src/_OLD/components/SearchBar/index.js
+client/src/_OLD/components/SearchButton/index.js
+client/src/_OLD/components/SearchDiv/index.js
+client/src/_OLD/components/SearchForm/index.js
+client/src/_OLD/components/SearchResults/index.js
+client/src/_OLD/pages/NoMatch.js
+client/src/_OLD/pages/SaveBooks.js
+client/src/_OLD/pages/SearchBooks.js
+client/src/_OLD/utils/API.js

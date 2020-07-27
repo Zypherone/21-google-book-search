@@ -1,5 +1,6 @@
 .jumbotron {
   background: url(/stacked-books.jpg);
+  background-size: cover;
 }
 
 .card-img-left {

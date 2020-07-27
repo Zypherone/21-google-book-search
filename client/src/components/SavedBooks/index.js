@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 
 function SavedBooks(props) {
   
-  const { saved, removeBook } = props;
+  const { saved, deleteBook } = props;
 
   return (saved.length === 0) ? (
     <Row id="SavedBooks" as="Main">
@@ -26,7 +26,7 @@ function SavedBooks(props) {
               author={book.authors}
               description={book.description}
               link={book.link}
-              deleteBook={removeBook}
+              deleteBook={deleteBook}
             />
           );
         })}

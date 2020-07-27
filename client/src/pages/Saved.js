@@ -17,14 +17,30 @@ class SaveBooks extends React.Component {
       .catch(err => console.log(err));
   };
 
-  removeBook = (id) => {
-    API.deleteBook(id)
+  getBook = (id) => {
+    console.log(id)
+    API.getBook(id)
+      .then((data) => {
+        console.log(data)
+        return this.setState({ results: [ data.data ] });
+      })
+      .catch(err => console.log(err));
+  };
+
+  deleteBook = (id) => {
+    return API.deleteBook(id)
       .then(() => { this.getBooks() })
       .catch(err => console.log(err));
   };
 
   componentDidMount() {
-    this.getBooks();
+    const { match: { params } } = this.props;
+    
+    if (params.id) 
+      this.getBook(params.id);
+    else
+      this.getBooks();
+
   };
 
   render() {
@@ -33,7 +49,7 @@ class SaveBooks extends React.Component {
       <>
         <Row>
           <Col>
-            <SavedBooks saved={results} removeBook={this.removeBook} />
+            <SavedBooks saved={results} deleteBook={this.deleteBook} />
           </Col>
         </Row>
       </>

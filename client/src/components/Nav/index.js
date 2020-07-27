@@ -6,7 +6,15 @@ function Menu() {
   return (
     <>
     <Navbar bg="dark" variant="dark" expand="sm">
-      <Navbar.Brand href="/">Google Book Search</Navbar.Brand>
+      <Navbar.Brand href="#">
+      <img
+        src="/logo.png"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+        alt="Google Book Search React App"
+      />
+    </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

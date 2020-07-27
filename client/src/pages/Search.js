@@ -45,7 +45,7 @@ class SearchBooks extends Component {
     console.log(this.state.results)// Testing errors
     let bookSaveChoice = this.state.results.filter((book) => (book.id === id));
     console.log(bookSaveChoice) // Testing errors
-    API.saveBook(bookSaveChoice[0])
+    return API.saveBook(bookSaveChoice[0])
       .then(console.log(bookSaveChoice[0]))
       .catch(err => console.log(err));
   };
